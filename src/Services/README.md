@@ -1,0 +1,1 @@
+File Services dùng để định nghĩa các API của từng module, khi định nghĩa xong mới có thể dùng để call API, phần này được viết hoàn toàn tách biệt với code UI, giúp cho việc dễ maintain và scale project

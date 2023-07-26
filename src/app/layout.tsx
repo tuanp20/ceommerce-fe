@@ -1,7 +1,14 @@
+'use client'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Mukta } from 'next/font/google'
+import Navbar from './navbar'
+import Footer from './footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const mukta = Mukta({ 
+  weight: ['300','400', '700'],
+  style: ['normal'],
+  display: 'swap',
+  subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,7 +22,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={mukta.className}>
+      <div className="site-wrap">
+        <Navbar/>
+        {children}
+        <Footer/>
+        </div>
+        </body>
     </html>
   )
 }
